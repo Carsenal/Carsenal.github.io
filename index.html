@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Title</title>
+    <style>
+    :root {
+        --bg-color: #000000;
+        --fg-color: #ffffff;
+        --acc1: #ff0000;
+        --acc2: #00ff00;
+        --acc3: #0000ff;
+    }
+    html, body {
+        background: var(--bg-color);
+        color: var(--fg-color);
+        text-align: center;
+    }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/loader_progress.css">
+    <script charset="UTF-8" src="js/hints.js"></script>
+    <script charset="UTF-8" src="js/loader.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+</head>
+<body>
+<table style="margin: auto; position: relative; margin-top: 20%">
+    <style>
+        .filled{ background: var(--fg-color); }
+    </style>
+<tr>
+    <td>
+        <pre id="client" style="text-align: left">
+   +--------------+
+   |.------------.|
+   ||<pre id="client_row_4" style="display:inline">            </pre>||
+   ||<pre id="client_row_3" style="display:inline">            </pre>||
+   ||<pre id="client_row_2a" style="display:inline">    </pre><pre id="client_percent" style="display:inline">   </pre>%<pre id="client_row_2b" style="display:inline">    </pre>||
+   ||<pre id="client_row_1" style="display:inline">            </pre>||
+   ||<pre id="client_row_0" style="display:inline">            </pre>||
+   |+------------+|
+   +-..--------..-+
+   .--------------.
+  / /============\ \
+ / /==============\ \
+/____________________\
+\____________________/
+        </pre>
+        <div id="progress_bar" style="position: relative":></div>
+    </td>
+    <td style="width: 205px;">
+        <pre id="data_1">[  x  x  x  x  x  x  x  x]</pre>
+        <pre id="data_2">[ x  x  x  x  x  x  x  x ]</pre>
+        <pre id="data_3">[x  x  x  x  x  x  x  x  ]</pre>
+    </td>
+    <td>
+        <pre id="server" style="text-align: left">
+ _______
+| ___  o|
+|[_-_]_ |           2
+|[_____]|
+|[_____]|
+|[====o]|
+|[_.--_]|
+|[_____]|
+|      :|
+|      :|
+|      :|
+|      :|
+|______:|
+        </pre>
+    </td>
+</tr>
+<tr>
+    <td colspan="3"><pre id="hints"></pre></td>
+</tr>
+</table>
+</body>
+</html>

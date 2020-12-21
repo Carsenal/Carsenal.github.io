@@ -1,0 +1,22 @@
+$num: 3;
+$duration: 1s;
+$fade: 2%;
+
+@for $i from 1 through $num {
+    #data_#{$i} {
+        position: absolute;
+        top: 50%;
+        opacity: 0;
+        animation-name: loader_keyframes;
+        animation-duration: $duration;
+        animation-iteration-count: infinite;
+        animation-delay: #{($duration * ($i - 1)) / $num};
+    }
+}
+
+@keyframes loader_keyframes {
+    #{ $fade } { opacity: 1; }
+    #{ (100/$num)-$fade} { opacity: 1; }
+    #{ (200/$num)+$fade} { opacity: 0; }
+    #{ 100-$fade } { opacity: 0; }
+}
