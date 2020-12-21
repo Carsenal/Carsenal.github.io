@@ -1,6 +1,6 @@
 
 // Constants
-const pageURL = '100MB.bin';
+const pageURL = 'page.html';
 
 // Load new page
 window.addEventListener('load', function loadMainPage(event) {
